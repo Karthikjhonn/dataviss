@@ -1,0 +1,278 @@
+<section class="bg-sky-200 pb-4">
+    <!-- menu bar  -->
+    <p>
+        <mat-toolbar class="bg-indigo-500">
+            <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+                <mat-icon>menu</mat-icon>
+            </button>
+            <span>Energyviss </span>
+            <span class="example-spacer"></span>
+            <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+                <mat-icon>refresh</mat-icon>
+            </button>
+            <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+                <mat-icon>alarm</mat-icon>
+            </button>
+            <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+                <mat-icon>person</mat-icon>
+            </button>
+        </mat-toolbar>
+    </p>
+    <!-- select  -->
+    <div class="flex  justify-between items-center overflow-x-auto bg-[#f9f9f9] p-2 shadow-lg mb-2">
+        <div class="p-4 gap-2">Floor:
+            <mat-form-field color="warn">
+                <mat-label>section</mat-label>
+                <mat-select>
+                    <mat-option *ngFor="let food of foods" [value]="food.value">
+                        {{food.viewValue}}
+                    </mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+        <div class="p-4 gap-2">Floor:
+            <mat-form-field color="warn">
+                <mat-label>section</mat-label>
+                <mat-select>
+                    <mat-option *ngFor="let food of foods" [value]="food.value">
+                        {{food.viewValue}}
+                    </mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+
+        <div class="p-4 gap-2">Floor:
+            <mat-form-field color="warn">
+                <mat-label>section</mat-label>
+                <mat-select>
+                    <mat-option *ngFor="let food of foods" [value]="food.value">
+                        {{food.viewValue}}
+                    </mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+
+        <div class="p-4 gap-2">Floor:
+            <mat-form-field color="warn">
+                <mat-label>section</mat-label>
+                <mat-select>
+                    <mat-option *ngFor="let food of foods" [value]="food.value">
+                        {{food.viewValue}}
+                    </mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+    </div>
+    <!-- lastest update  -->
+    <div
+        class="flex gap-6 justify-between lg:justify-center items-center  overflow-x-auto bg-[#f9f9f9] p-2 py-4 shadow-lg mb-2">
+
+        <div class="flex items-center gap-2">
+            <p class="text-black uppercase font-medium whitespace-nowrap">energy :</p>
+            <p class="text-red-500 whitespace-nowrap">156.610 kwh</p>
+        </div>
+
+        <div class="flex items-center gap-2">
+            <p class="text-black uppercase font-medium whitespace-nowrap">last updated :</p>
+            <p class="text-red-500 whitespace-nowrap">21/08/2023 12.49 PM</p>
+        </div>
+
+        <div class="flex items-center gap-2">
+            <p class="text-black uppercase font-medium whitespace-nowrap"> next hour predicted energy :</p>
+            <p class="text-red-500 whitespace-nowrap">166.420 kwh</p>
+        </div>
+    </div>
+    <!-- semicircel bar  -->
+    <div class="flex flex-wrap justify-center  items-center md:gap-16 gap-8 py-8 px-2 container mx-auto bg-white mb-2">
+        <!-- item-1  -->
+        <div class="w-[300px] h-[150px] bg-white relative flex justify-center items-end overflow-hidden border-b shadow">
+            <div>
+                <h1 class="text-xl md:text-2xl font-semibold">240.32</h1>
+                <p>voltage (v)</p>
+            </div>
+            <!-- animation bar -->
+            <div class="after:content-[''] after:border-[10px] after:w-[300px] after:h-[300px] after:absolute after:top-0 after:left-0 after:rounded-full after:border-b-green-500 after:border-r-green-500 after:rotate-[{{this.semiCircle[0]}}deg]"></div>
+        
+        </div>
+        <!-- item-2  -->
+        <div class="w-[300px] h-[150px] bg-white relative flex justify-center items-end overflow-hidden border-b shadow">
+            <div>
+                <h1 class="text-xl md:text-2xl font-semibold">240.32</h1>
+                <p>voltage (v)</p>
+            </div>
+            <!-- animation bar -->
+            <div class="after:content-[''] after:border-[10px] after:w-[300px] after:h-[300px] after:absolute after:top-0 after:left-0 after:rounded-full after:border-b-green-500 after:border-r-green-500 after:rotate-[{{this.semiCircle[1]}}deg]"></div>
+        
+        </div>
+        <!-- item-3  -->
+        <div class="w-[300px] h-[150px] bg-white relative flex justify-center items-end overflow-hidden border-b shadow">
+            <div>
+                <h1 class="text-xl md:text-2xl font-semibold">240.32</h1>
+                <p>voltage (v)</p>
+            </div>
+            <!-- animation bar -->
+            <div class="after:content-[''] after:border-[10px] after:w-[300px] after:h-[300px] after:absolute after:top-0 after:left-0 after:rounded-full after:border-b-green-500 after:border-r-green-500 after:rotate-[{{this.semiCircle[2]}}deg]"></div>
+        
+        </div>
+        <!-- item-4  -->
+        <div class="w-[300px] h-[150px] bg-white relative flex justify-center items-end overflow-hidden border-b shadow">
+            <div>
+                <h1 class="text-xl md:text-2xl font-semibold">240.32</h1>
+                <p>voltage (v)</p>
+            </div>
+            <!-- animation bar -->
+            <div class="after:content-[''] after:border-[10px] after:w-[300px] after:h-[300px] after:absolute after:top-0 after:left-0 after:rounded-full after:border-b-green-500 after:border-r-green-500 after:rotate-[{{this.semiCircle[3]}}deg]"></div>
+        
+        </div>
+    
+    </div>
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 grid-flow-row p-4 gap-12 bg-white mb-6 container mx-auto">
+        <!-- left chart  -->
+        <div>
+            <h1 class="text-center">power kw</h1>
+            <div class="grid  grid-cols-5 overflow-x-auto relative">
+                <!-- row-1  -->
+                <div class="border-b border-r px-10 py-8 relative">
+                    <div class="absolute left-0 top-10">
+                        0.21
+                    </div>
+                </div>
+                <div class="border-b border-r px-10 py-8"></div>
+                <div class="border-b border-r px-10 py-8"></div>
+                <div class="border-b border-r px-10 py-8"></div>
+                <div class="border-b border-r px-10 py-8 "></div>
+                
+                <!-- 2 -->
+                <div class="border-b border-r px-10 py-8 relative">
+                    <div class="absolute left-0 top-10">
+                        0.45
+                    </div>
+                </div>
+                <div class="border-b border-r px-10 py-8"></div>
+                <div class="border-b border-r px-10 py-8"></div>
+                <div class="border-b border-r px-10 py-8"></div>
+                <div class="border-b border-r px-10 py-8"></div>
+                
+                <!-- 3 -->
+                <div class="border-b border-r px-10 py-8 relative">
+                    <div class="absolute left-0 top-10">
+                        1.21
+                    </div>
+                </div>
+                <div class="border-b border-r px-10 py-8"></div>
+                <div class="border-b border-r px-10 py-8"></div>
+                <div class="border-b border-r px-10 py-8"></div>
+                <div class="border-b border-r px-10 py-8"></div>
+                
+                <!-- 4 -->
+                <div class="border-b border-r px-10 py-8 relative">
+                    <div class="absolute left-0 top-10">
+                        0.21
+                    </div>
+                </div>
+                <div class="border-b border-r px-10 py-8 relative">
+                    <div class="absolute -left-8 -bottom-8">
+                        12.356.2
+                    </div>
+                </div>
+                <div class="border-b border-r px-10 py-8 relative">
+                    <div class="absolute -left-8 -bottom-8">
+                        12.356.2
+                    </div>
+                </div>
+                <div class="border-b border-r px-10 py-8 relative">
+                    <div class="absolute -left-8 -bottom-8">
+                        12.356.2
+                    </div>
+                </div>
+                <div class="border-b border-r px-10 py-8 relative">
+                    <div class="absolute -left-8 -bottom-8">
+                        12.356.2
+                    </div>
+                </div>
+               
+                <div class="absolute left-1/2 -bottom-0 h-full w-[1px] bg-black">
+                    <div class="top-1/2  left-3 relative bg-slate-700"><span class="bg-slate-600 whitespace-nowrap p-3 ps-6 text-white"> power 1.233</span>
+                    <div class="bg-slate-600 w-[15px] h-[15px] rotate-[45deg] absolute top-1/2 -translate-y-1/2 -left-2"></div>
+                    </div>
+                </div>
+
+                
+               
+                
+            </div>
+        </div>
+        <!-- right chart  -->
+        <div>
+            <h1 class="text-center">power Factor</h1>
+            <div class="grid  grid-cols-5 overflow-x-auto relative">
+                <!-- row-1  -->
+                <div class="border-b border-r px-10 py-8 relative">
+                    <div class="absolute left-0 top-10">
+                        0.21
+                    </div>
+                </div>
+                <div class="border-b border-r px-10 py-8"></div>
+                <div class="border-b border-r px-10 py-8"></div>
+                <div class="border-b border-r px-10 py-8"></div>
+                <div class="border-b border-r px-10 py-8 "></div>
+                
+                <!-- 2 -->
+                <div class="border-b border-r px-10 py-8 relative">
+                    <div class="absolute left-0 top-10">
+                        0.45
+                    </div>
+                </div>
+                <div class="border-b border-r px-10 py-8"></div>
+                <div class="border-b border-r px-10 py-8"></div>
+                <div class="border-b border-r px-10 py-8"></div>
+                <div class="border-b border-r px-10 py-8"></div>
+                
+                <!-- 3 -->
+                <div class="border-b border-r px-10 py-8 relative">
+                    <div class="absolute left-0 top-10">
+                        1.21
+                    </div>
+                </div>
+                <div class="border-b border-r px-10 py-8"></div>
+                <div class="border-b border-r px-10 py-8"></div>
+                <div class="border-b border-r px-10 py-8"></div>
+                <div class="border-b border-r px-10 py-8"></div>
+                
+                <!-- 4 -->
+                <div class="border-b border-r px-10 py-8 relative">
+                    <div class="absolute left-0 top-10">
+                        0.21
+                    </div>
+                </div>
+                <div class="border-b border-r px-10 py-8 relative">
+                    <div class="absolute -left-8 -bottom-8">
+                        12.356.2
+                    </div>
+                </div>
+                <div class="border-b border-r px-10 py-8 relative">
+                    <div class="absolute -left-8 -bottom-8">
+                        12.356.2
+                    </div>
+                </div>
+                <div class="border-b border-r px-10 py-8 relative">
+                    <div class="absolute -left-8 -bottom-8">
+                        12.356.2
+                    </div>
+                </div>
+                <div class="border-b border-r px-10 py-8 relative">
+                    <div class="absolute -left-8 -bottom-8">
+                        12.356.2
+                    </div>
+                </div>
+               
+               
+                
+               
+                
+            </div>
+        </div>
+    </div>
+
+</section>
