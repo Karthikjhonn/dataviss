@@ -14,7 +14,7 @@
             <!-- popup -->
           <span
             class="bg-white px-1 absolute top-1/2 left-10 -translate-y-1/2 {{formValidation.controls.email.invalid && formValidation.controls.email.touched?'!text-red-500':'!text-black'}}"
-            [ngClass]="{'top-0 text-red-500':formValidation.controls.email.dirty || formValidation.controls.email.touched}">Email</span>
+            [ngClass]="{'!top-0 text-red-500':formValidation.controls.email.dirty || formValidation.controls.email.touched}">Email</span>
             <!-- mat icon  -->
           <mat-icon class="absolute top-1/2 left-2 -translate-y-1/2">email</mat-icon>
         </div>
@@ -32,7 +32,7 @@
             <!-- popup  -->
           <span
             class="bg-white p-1 absolute top-1/2 left-10 -translate-y-1/2 {{formValidation.controls.password.invalid && formValidation.controls.password.touched?'!text-red-500':'!text-black'}}"
-            [ngClass]="{'top-0 text-red-500':formValidation.controls.password.dirty || formValidation.controls.password.touched}">password</span>
+            [ngClass]="{'!top-0 text-red-500':formValidation.controls.password.dirty || formValidation.controls.password.touched}">password</span>
             <!-- mat icons  -->
           <mat-icon class="absolute top-1/2 left-2 -translate-y-1/2">lock</mat-icon>
           <mat-icon class="absolute top-1/2 right-8 -translate-y-1/2"
@@ -51,7 +51,7 @@
     </form>
   </div>
   <!-- submitted message popup -->
-  <section class="h-screen w-full flex justify-center items-center fixed top-0 left-0 bg-black/75 z-[151] p-4 hidden {{this.popupShow}}">
+  <section class="h-screen w-full flex justify-center items-center fixed top-0 left-0 bg-black/75 z-[151] p-4" [ngClass]="{'invisible' : this.popupShow =='invisible' } ">
       <div class="popupcontainer bg-white p-4 w-full rounded-3xl max-w-md">
         <div class="text-center">
           <h1 class="text-3xl md:text-5xl uppercase font-semibold text-[#191D88]">Nokia</h1>
