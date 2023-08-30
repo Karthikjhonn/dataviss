@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 export class DashboardComponent {
   ngOnInit() {
     setInterval(() => {
-      this.randomNumber(45, 224)
+      this.randomNumber(49, 210)
     }, 2000)
   }
   foods: any = [

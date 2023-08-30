@@ -87,41 +87,55 @@
         <!-- item-1  -->
         <div class="w-[300px] h-[150px] bg-white relative flex justify-center items-end overflow-hidden border-b shadow">
             <div>
-                <h1 class="text-xl md:text-2xl font-semibold">240.32</h1>
+                <h1 class="text-xl md:text-2xl font-semibold">{{this.semiCircle[0]}}.05</h1>
                 <p>voltage (v)</p>
             </div>
             <!-- animation bar -->
-            <div class="after:content-[''] after:border-[10px] after:w-[300px] after:h-[300px] after:absolute after:top-0 after:left-0 after:rounded-full after:border-b-green-500 after:border-r-green-500 after:rotate-[{{this.semiCircle[0]}}deg]"></div>
+            <!-- old code  -->
+            <!-- <div class="after:content-[''] after:border-[10px] after:w-[300px] after:h-[300px] after:absolute after:top-0 after:left-0 after:rounded-full after:border-b-green-500 after:border-r-green-500 after:rotate-[145deg]"  >
+            </div> -->
+            <!-- new bar after bug -->
+            <div class="w-[300px] h-[300px] border-[10px] border-slate-50/50 absolute top-0 left-0 rounded-full"></div>
+            <div class="w-[300px] h-[300px] border-[10px] border-r-green-400 border-b-green-400  absolute top-0 left-0 rounded-full" [ngStyle]="{'rotate':this.semiCircle[0]+'deg'}"></div>
         
         </div>
         <!-- item-2  -->
         <div class="w-[300px] h-[150px] bg-white relative flex justify-center items-end overflow-hidden border-b shadow">
             <div>
-                <h1 class="text-xl md:text-2xl font-semibold">240.32</h1>
+                <h1 class="text-xl md:text-2xl font-semibold">{{this.semiCircle[1]}}.32</h1>
                 <p>voltage (v)</p>
             </div>
             <!-- animation bar -->
-            <div class="after:content-[''] after:border-[10px] after:w-[300px] after:h-[300px] after:absolute after:top-0 after:left-0 after:rounded-full after:border-b-green-500 after:border-r-green-500 after:rotate-[{{this.semiCircle[1]}}deg]"></div>
+            <!-- <div class="after:content-[''] after:border-[10px] after:w-[300px] after:h-[300px] after:absolute after:top-0 after:left-0 after:rounded-full after:border-b-green-500 after:border-r-green-500"  [ngClass]="this.semiCircle ?'after:rotate-['+this.semiCircle[1]+'deg]':''  "></div> -->
+             <!-- new bar after bug -->
+             <div class="w-[300px] h-[300px] border-[10px] border-slate-50/50 absolute top-0 left-0 rounded-full"></div>
+             <div class="w-[300px] h-[300px] border-[10px] border-r-green-400 border-b-green-400 absolute top-0 left-0 rounded-full" [ngStyle]="{'rotate':this.semiCircle[1]+'deg'}"></div>
         
         </div>
         <!-- item-3  -->
         <div class="w-[300px] h-[150px] bg-white relative flex justify-center items-end overflow-hidden border-b shadow">
             <div>
-                <h1 class="text-xl md:text-2xl font-semibold">240.32</h1>
+                <h1 class="text-xl md:text-2xl font-semibold">{{this.semiCircle[2]}}.32</h1>
                 <p>voltage (v)</p>
             </div>
             <!-- animation bar -->
-            <div class="after:content-[''] after:border-[10px] after:w-[300px] after:h-[300px] after:absolute after:top-0 after:left-0 after:rounded-full after:border-b-green-500 after:border-r-green-500 after:rotate-[{{this.semiCircle[2]}}deg]"></div>
+            <!-- <div class="after:content-[''] after:border-[10px] after:w-[300px] after:h-[300px] after:absolute after:top-0 after:left-0 after:rounded-full after:border-b-green-500 after:border-r-green-500"  [ngClass]="this.semiCircle ?'after:rotate-['+this.semiCircle[2]+'deg]':''  "></div> -->
+             <!-- new bar after bug -->
+             <div class="w-[300px] h-[300px] border-[10px] border-slate-50/50 absolute top-0 left-0 rounded-full"></div>
+             <div class="w-[300px] h-[300px] border-[10px] border-r-green-400 border-b-green-400 absolute top-0 left-0 rounded-full" [ngStyle]="{'rotate':this.semiCircle[2]+'deg'}"></div>
         
         </div>
         <!-- item-4  -->
         <div class="w-[300px] h-[150px] bg-white relative flex justify-center items-end overflow-hidden border-b shadow">
             <div>
-                <h1 class="text-xl md:text-2xl font-semibold">240.32</h1>
+                <h1 class="text-xl md:text-2xl font-semibold">{{this.semiCircle[0]}}.32</h1>
                 <p>voltage (v)</p>
             </div>
             <!-- animation bar -->
-            <div class="after:content-[''] after:border-[10px] after:w-[300px] after:h-[300px] after:absolute after:top-0 after:left-0 after:rounded-full after:border-b-green-500 after:border-r-green-500 after:rotate-[{{this.semiCircle[3]}}deg]"></div>
+            <!-- <div class="after:content-[''] after:border-[10px] after:w-[300px] after:h-[300px] after:absolute after:top-0 after:left-0 after:rounded-full after:border-b-green-500 after:border-r-green-500"  [ngClass]="this.semiCircle ?'after:rotate-['+this.semiCircle[3]+'deg]':''  "></div> -->
+             <!-- new bar after bug -->
+             <div class="w-[300px] h-[300px] border-[10px] border-slate-50/50 absolute top-0 left-0 rounded-full"></div>
+             <div class="w-[300px] h-[300px] border-[10px] border-r-green-400 border-b-green-400 absolute top-0 left-0 rounded-full" [ngStyle]="{'rotate':this.semiCircle[3]+'deg'}"></div>
         
         </div>
     

@@ -9,7 +9,7 @@
       <div class="mb-10">
         <div class="relative ">
           <input type="email" required name="email" id="email"
-            class="border p-2 ps-10 w-full rounded  z-[-2] {{formValidation.controls.email.touched && formValidation.controls.email.invalid? 'border-red-400':''}}"
+            class="border p-3 ps-10 w-full rounded  z-[-2] {{formValidation.controls.email.touched && formValidation.controls.email.invalid? 'border-red-400':''}}"
             formControlName="email">
             <!-- popup -->
           <span
@@ -27,7 +27,7 @@
       <div class="mb-10">
         <div class="relative ">
           <input type="{{this.passwordType}}" name="email" id="email"
-            class="border p-2 ps-10 w-full rounded {{formValidation.controls.password.touched && formValidation.controls.password.invalid?'border-red-400':''}}"
+            class="border p-3 ps-10 w-full rounded {{formValidation.controls.password.touched && formValidation.controls.password.invalid?'border-red-400':''}}"
             minlength="6" formControlName="password">
             <!-- popup  -->
           <span
@@ -47,7 +47,7 @@
       <div class="text-end mb-10">
         <a href="#" class="capitalize">forgot password ?</a>
       </div>
-      <button mat-flat-button class="!bg-purple-600 w-full" [disabled]="formValidation.invalid">submit</button>
+      <button mat-flat-button class="!bg-[#191D88] w-full !p-6" [disabled]="formValidation.invalid">submit</button>
     </form>
   </div>
   <!-- submitted message popup -->
